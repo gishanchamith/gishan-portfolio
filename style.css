@@ -36,27 +36,8 @@ nav ul li a:hover {
     color: #ff9800;
 }
 
-/* Profile Image Styling */
-.profile-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.profile-img {
-    width: 45%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile-img:hover {
-    transform: scale(1.05);
-}
-
 /* Section Styling */
-section {
+#leadership-achievements {
     max-width: 900px;
     margin: 40px auto;
     background: white;
@@ -66,7 +47,7 @@ section {
 }
 
 /* Headings */
-section h2 {
+#leadership-achievements h2 {
     font-size: 32px;
     color: #222;
     text-align: center;
@@ -75,13 +56,121 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Contact Info Styling */
+#leadership-achievements h3 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 30px;
+    display: inline-block;
+    border-left: 5px solid #ff9800;
+    padding-left: 10px;
+    text-align: center;
+}
+
+/* Lists */
+#leadership-achievements ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* List Items */
+#leadership-achievements li {
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff7e6;
+    border-left: 5px solid #ff9800;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+}
+
+/* Strong Titles */
+#leadership-achievements li strong {
+    font-size: 20px;
+    color: #222;
+    display: block;
+}
+
+/* Paragraph */
+#leadership-achievements li p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* ====== Gallery Styles ====== */
+.gallery-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container h2 {
+    font-size: 32px;
+    color: #222;
+    border-bottom: 3px solid #ff9800;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Slideshow Styling */
+.slideshow {
+    position: relative;
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slideshow button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Contact Info Section */
 .contact-info {
     background: #fff7e6;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
+    margin: 40px auto;
+    max-width: 600px;
 }
 
 .contact-info p {
@@ -111,13 +200,22 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    section {
+    #leadership-achievements, .gallery-container {
         max-width: 95%;
         padding: 20px;
     }
 
-    .profile-img {
-        width: 40%;
+    #leadership-achievements li {
+        width: 95%;
+    }
+
+    .slideshow {
+        width: 90%;
+    }
+
+    .slideshow button {
+        padding: 8px 12px;
+        font-size: 18px;
     }
 
     .contact-info {
