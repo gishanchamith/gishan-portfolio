@@ -35,6 +35,36 @@ section {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
 
+#leadership-achievements h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+#leadership-achievements h3 {
+    font-size: 22px;
+    color: #555;
+    margin-top: 20px;
+}
+
+#leadership-achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#leadership-achievements li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#leadership-achievements li p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #777;
+}
+
 footer {
     background: #333;
     color: white;
