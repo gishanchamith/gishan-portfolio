@@ -102,6 +102,67 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* ====== Gallery Styles ====== */
+.gallery-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container h2 {
+    font-size: 32px;
+    color: #222;
+    border-bottom: 3px solid #ff9800;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Slideshow Styling */
+.slideshow {
+    position: relative;
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slideshow button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
 /* Footer */
 footer {
     background: #222;
@@ -113,11 +174,21 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #leadership-achievements {
+    #leadership-achievements, .gallery-container {
         max-width: 95%;
         padding: 20px;
     }
+
     #leadership-achievements li {
         width: 95%;
+    }
+
+    .slideshow {
+        width: 90%;
+    }
+
+    .slideshow button {
+        padding: 8px 12px;
+        font-size: 18px;
     }
 }
