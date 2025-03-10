@@ -73,3 +73,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#github-projects {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+#github-projects li {
+    text-align: center; /* Ensures text is centered */
+    margin: 10px 0; /* Adds spacing between links */
+}
+
