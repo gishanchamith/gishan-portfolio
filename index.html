@@ -1,98 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gishan Chamith</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/me.jpeg" rel="icon">
+  <link href="assets/img/me.jpeg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
 
-    <div class="container">
-        <div class="left-section">
-            <img src="IMG_1595_1[1].jpeg" alt="Profile Picture">
-        </div>
-        <div class="right-section">
-            <h2>HI THERE!</h2>
-            <h1>I'm <span class="highlight">Gishan Chamith</span></h1>
-            <p class="role">Physics Tutor</p>
-            <p class="role">CSE undergraduate </p>
 
-            <p class="description">
-                A passionate Computer Science & Engineering undergraduate at the University of Moratuwa.
-                 I have a strong passion for leadership, problem-solving, and software development. Currently, I'm exploring opportunities to grow in the tech field and contribute to exciting projects!
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/megreen.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+ 
+      <h1 class="sitename">Gishan Chamith</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Photos</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Projects</a></li>
+
+            </li>
+            <li><a href="#">Learn with Gishan</a></li>
+            <li><a href="#">Personal portfolio</a></li>
+            <li><a href="#">Oceanline web</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/me.jpeg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Gishan Chamith</h2>
+        <p>I'm <span class="typed" data-typed-items="Designer, Developer,Physics Tutor"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>A passionate Computer Science & Engineering undergraduate at the University of Moratuwa.
+           I have a strong passion for leadership, problem-solving, and software development. 
+           Currently, I'm exploring opportunities to grow in the tech field and contribute to exciting projects!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/me.jpeg" class="img-fluid" alt="">
+          </div>
+<div class="col-lg-8 content">
+  <h2>Physics Tutor &amp; Engineering Undergraduate.</h2>
+  <p class="fst-italic py-3">
+    I'm Gishan Chamith, an enthusiastic learner, passionate educator, and dedicated undergraduate at the University of Moratuwa. I love inspiring students through physics and building meaningful experiences through leadership and volunteering.
+  </p>
+  <div class="row">
+    <div class="col-lg-6">
+      <ul>
+        <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>25 April 2003</span></li>
+        <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://gishanchamith.com.lk">gishanchamith.com.lk</a></span></li>
+        <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>076 351 0388</span></li>
+        <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Galigamuwa, Sri Lanka</span></li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <ul>
+        <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor (Undergraduate)</span></li>
+        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>bandarakgc.23@uom.lk</span></li>
+        <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong> <span><a href="https://github.com/gishanchamith">gishanchamith.io</a></span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+            <p class="py-3">
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
             </p>
-            <a href=#about class="btn">MORE ABOUT ME</a>
+          </div>
         </div>
 
-    </div>
-    <br>
-    <br>
-    <p class="midline">Life is not a jorney its a destination...</p>
+      </div>
 
-    <br>
-    <br>
-    <div class="block">
-        <div class="contact-info">
-           <h2> Skills</h2>
-            <p >Java,Python</p><p>C++,HTML</p> <p>CSS,Javascript</p>
+    </section><!-- /About Section -->
+
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-emoji-smile"></i>
+          <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Happy Students</strong> <span>in A/L Physics Class</span></p>
         </div>
-        <section class="contact-info">
-            <h2>Contact Me</h2>
-            <p><strong>Phone:</strong><a href="tel:+94763510388"> 076-3510388</a>/<a href="tel:+94726865435">0726865435</a> </p>
-            <p><strong>Email:</strong> <a href="mailto:gishanb.23@cse.mrt.ac.lk">gishanb.23@cse.mrt.ac.lk</a>, <a href="mailto:bandarakgc.23@uom.lk">bandarakgc.23@uom.lk</a></p>
-            <p>GitHub: <a href="https://github.com/gishanchamith" target="_blank">github.com/gishanchamith</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/gishan-chamith-66b49b340" target="_blank">linkedin.com/in/gishan-chamith-66b49b340</a></p>
-        </section>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Projects</strong> <span>web & volunteering</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-headset"></i>
+          <span data-purecounter-start="0" data-purecounter-end="400+" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hours of Support</strong> <span>for events & classes</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-people"></i>
+          <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Teams Led</strong> <span>in events & organizations</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
     </div>
-    <br>
-    <p class="midline">Life is not a jorney its a destination...</p>
-    <br>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+
+  <!-- Skills Section -->
+<section id="skills" class="skills section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>Here are some of the skills I’ve developed through teaching, leading, and building projects.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>HTML/CSS/Js</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Python</span> <i class="val">70%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Java</span> <i class="val">65%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>C++</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Canva</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Public Speaking / Leadership</span> <i class="val">95%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
+
+
+   <!-- Resume Section -->
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>Dedicated undergraduate engineering student and passionate physics tutor with strong leadership, organizational, and technical skills. Committed to education, teamwork, and personal growth.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Gishan Chamith</h4>
+          <p><em>Engineering undergraduate at University of Moratuwa and passionate A/L physics tutor with a proven academic and leadership record. Involved in multiple student organizations and tech volunteering projects.</em></p>
+          <ul>
+            <li>87/G/01 Udahagedara, Galigamuwa Town, Sri Lanka</li>
+            <li>0763510388</li>
+            <li>bandarakgc.23@uom.lk</li>
+          </ul>
+        </div>
+
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>BSc (Hons) Engineering - University of Moratuwa</h4>
+          <h5>2023 - Present</h5>
+          <p><em>Faculty of Engineering, Moratuwa, Sri Lanka</em></p>
+          <p>Currently pursuing studies in engineering with involvement in AIESEC, IEEE, Buddhist Society, and student union activities.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>G.C.E. Advanced Level - Physical Science Stream</h4>
+          <h5>2022</h5>
+          <p><em>St. Mary’s College, Kegalle</em></p>
+          <p>Island Rank 65, District 3rd - Achieved excellent results in Physics, Chemistry, and Combined Mathematics.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>G.C.E. Ordinary Level</h4>
+          <h5>2019</h5>
+          <p><em>St. Mary’s College, Kegalle</em></p>
+          <p>9A passes (English Medium), including A in Mathematics under the guidance of Rukshan Kulakumara.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="resume-title">Professional & Leadership Experience</h3>
+
+        <div class="resume-item">
+          <h4>A/L Physics Tutor (Private)</h4>
+          <h5>2023 - Present</h5>
+          <p><em>Learn with Gishan, Sri Lanka</em></p>
+          <ul>
+            <li>Started and promoted own A/L Physics class with strong student engagement.</li>
+            <li>Created educational website and shared resources for O/L and A/L students.</li>
+ 
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4>IEEE Student Branch, University of Moratuwa</h4>
+          <h5>2025 - Present</h5>
+          <p><em>Volunteer Management Committee Member</em></p>
+          <ul>
+            <li>Handled volunteer coordination and event logistics.</li>
+          </ul>
+          <p><em>Rise Up Mora 2025</em></p>
+          <ul>
+            <li>Vice Chair</li>
+          </ul>
+          <p><em>MERCon </em></p>
+          <ul>
+            <li>Technical committee lead 2025</li>
+            <li>Program committee member 2024</li>
+          </ul>
+
+        </div>
+
+        <div class="resume-item">
+          <h4>District Coordinator - Soyuru Sathkara</h4>
+          <h5>Jan 2024</h5>
+          <p><em>Kegalle District</em></p>
+          <ul>
+            <li>Led the first team to launch Soyuru Sathkara in the entire country.</li>
+            <li>Managed district-level logistics and volunteer collaboration.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4>AIESEC Member - UoM</h4>
+          <h5>2024 - Present</h5>
+          <p><em>Incoming Global Volunteer (IGV), People Management, and Expansion Management Teams</em></p>
+          
+        </div>
+
+        <div class="resume-item">
+          <h4>Group Representative - E1 Group </h4>
+          <h5>2024</h5>
+          <p><em>University of Moratuwa</em></p>
+          <ul>
+            <li>Help coligues with academics and also with non academic activities</li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Resume Section -->
+
+
+ <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Explore some of the projects, educational initiatives, and leadership experiences that define my journey as a physics tutor, engineering undergraduate, and active volunteer.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">Web Apps</li>
+        <li data-filter=".filter-product">Projects</li>
+        <li data-filter=".filter-branding">Leadership</li>
+        <li data-filter=".filter-books">Volunteering</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Learn with Gishan Website -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/learnwithgishan.png" class="img-fluid" alt="Learn with Gishan Website">
+            <div class="portfolio-info">
+              <h4>Learn with Gishan</h4>
+              <p>A learning platform for A/L & O/L students with study materials and class info.</p>
+              <a href="assets/img/portfolio/learnwithgishan.png" title="Learn with Gishan" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://gishanchamith.github.io/learnwithgishan/" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Website -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/portfolio-site.png" class="img-fluid" alt="Personal Portfolio">
+            <div class="portfolio-info">
+              <h4>Personal Portfolio</h4>
+              <p>A professional portfolio website to present my profile and achievements.</p>
+              <a href="assets/img/portfolio/portfolio-site.png" title="Portfolio Website" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="https://gishanchamith.com.lk" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soyuru Sathkara Coordination -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/j (11).jpg" class="img-fluid" alt="Soyuru Sathkara">
+            <div class="portfolio-info">
+              <h4>Soyuru Sathkara</h4>
+              <p>District Coordinator for Kegalle in a nationwide social welfare initiative.</p>
+              <a href="assets/img/portfolio/j (11).jpg" title="Soyuru Sathkara" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html#soyuru" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wibawi Prathiba -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/j (15).jpg" class="img-fluid" alt="Wibawi Prathiba">
+            <div class="portfolio-info">
+              <h4>Wibawi Prathiba</h4>
+              <p>Led the technical team and contributed to organizing a major student event.</p>
+              <a href="assets/img/portfolio/j (15).jpg" title="Wibawi Prathiba" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html#wibawi" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MERCon Volunteering -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/j (21).jpg" class="img-fluid" alt="MERCon">
+            <div class="portfolio-info">
+              <h4>MERCon 2024</h4>
+              <p>Volunteer at MERCon, IEEE conference organized by the University of Moratuwa.</p>
+              <a href="assets/img/portfolio/j (21).jpg" title="MERCon 2024" data-gallery="portfolio-gallery-books" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html#mercon" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- KeMESS Role -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/j (5).jpg" class="img-fluid" alt="AIESEC at UoM">
+            <div class="portfolio-info">
+              <h4>Project Manager - KeMESS</h4>
+              <p>Planned and manage waves of wisdom physics seminar series in multiple schools </p>
+              <a href="assets/img/portfolio/j (5).jpg" title="KeMESS role" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html#aiesec" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+   <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>As a passionate educator, developer, and volunteer leader, I offer a range of services focused on education, mentorship, digital solutions, and impactful collaborations. Here’s how I bring value to students and organizations.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Physics Tuition -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-easel2"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link">Physics Tuition</a></h4>
+          <p class="description">A/L Physics classes with conceptual clarity, exam techniques, and short notes. Join my sessions designed to help students achieve top ranks in Sri Lanka.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Educational Content Creation -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0"><i class="bi bi-journal-bookmark"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link">Educational Content</a></h4>
+          <p class="description">Creating Sinhala and English medium study materials, summaries, and model papers for O/L and A/L students via "Learn with Gishan" platform.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Website Development -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link">Website Development</a></h4>
+          <p class="description">Building modern, responsive websites for personal portfolios, student platforms, and event promotions using GitHub Pages and HTML/CSS.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Event Technical Coordination -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link">Event Tech Coordination</a></h4>
+          <p class="description">Handled tech and logistics for events like Wibawi Prathiba. I specialize in coordinating sound systems, visuals, and overall stage management.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Volunteer & Team Leadership -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0"><i class="bi bi-people-fill"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link">Team Leadership</a></h4>
+          <p class="description">As a district coordinator, AIESEC team member, and E1 group rep, I lead diverse teams to success in social, academic, and student-driven projects.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- One-on-One Mentoring -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-chat-dots"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link">Student Mentoring</a></h4>
+          <p class="description">Guiding students from rural and urban schools alike on study methods, motivation, university entrance, and English language improvement.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+<!--
+termology section space
+get feedbacks 
+and add this
+
+
+
+
+-->
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me through any of the following methods</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-5">
+
+        <div class="info-wrap">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Address</h3>
+              <p>87/G/01 Udahagedara, Galigamuwa Town</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Me</h3>
+              <p>076 351 0388</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Me</h3>
+              <p>bandarakgc.23@uom.lk</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <iframe src="https://maps.google.com/maps?q=Galigamuwa%20Town&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <label for="name-field" class="pb-2">Your Name</label>
+              <input type="text" name="name" id="name-field" class="form-control" required="">
+            </div>
+
+            <div class="col-md-6">
+              <label for="email-field" class="pb-2">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email-field" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject-field" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="message-field" class="pb-2">Message</label>
+              <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
     <div class="container">
-        <div class="left">
-            <h1> Who Am I?</h1>
-            <img src="image.png" width="15vw">
-        </div>
-        <div class="right-section" id="about">
-           <p class="description"><strong> Hi, I’m Gishan Chamith, a first-year undergraduate at the University of Moratuwa, passionate about engineering and physics. <br>
-            <span class="highlight">ranked 65th all-island and 3rd in Kegalle district in the 2022 Advanced Level examination.</span> <br>I’m also actively involved in leadership roles, having worked with AIESEC, the IEEE Student Branch, and the Buddhist Society at my university. 
-            <br> Beyond academics, I enjoy mentoring students in physics, organizing events, and exploring software development. 
-            <br>I’ve contributed to projects like SecureConnect and am currently working on a website for O/L students in Sri Lanka.<br>
-I believe in continuous learning, teamwork, and making a positive impact, whether through volunteering, tech projects, or community-driven initiatives.
-<br>
-<br>
-Education: St. Mary's College, Kegalle | University of Moratuwa
-<br>
-<br>
-Key Skills: Java, Python, C++, HTML, CSS, JavaScript, Git, and problem-solving.
-
-          </strong> </p>
-        <br>
-
-    <button>
-    <a href="about.html" class="btn2"><span class="spn2">More !</span></a>
-  </button>
-        </div>
-
-
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Gishan Chamith</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+      </div>
     </div>
-    
-    <footer>
-        <p>© 2025 Gishan Chamith</p>
-    </footer>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
