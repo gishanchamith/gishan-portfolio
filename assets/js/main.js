@@ -227,3 +227,38 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+<script>
+  document.querySelector('.php-email-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    let form = this;
+    let formData = new FormData(form);
+    let action = form.getAttribute('action');
+
+    let loading = form.querySelector('.loading');
+    let error = form.querySelector('.error-message');
+    let sent = form.querySelector('.sent-message');
+
+    loading.style.display = 'block';
+    error.style.display = 'none';
+    sent.style.display = 'none';
+
+    fetch(action, {
+      method: 'POST',
+      body: formData
+    }).then(response => {
+      loading.style.display = 'none';
+      if (response.ok) {
+        sent.style.display = 'block';
+        form.reset();
+      } else {
+        return response.text().then(text => { throw new Error(text); });
+      }
+    }).catch(err => {
+      loading.style.display = 'none';
+      error.innerHTML = err.message;
+      error.style.display = 'block';
+    });
+  });
+</script>
